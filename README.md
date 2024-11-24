@@ -12,6 +12,7 @@ Related Literature
 1.	Deep Reinforcement Learning for Object Detection: Highlights the application of DRL in dynamically learning bounding boxes for object detection Source.
 2.	A Survey of Modern Deep Learning based Object Detection Models: Explores the scalability and accuracy improvements of DQN-based models on datasets like COCO Source.
 3.	Attentive Layer Separation for Object Classification and Object Localization in Object Detection Source.
+   
 How is Our Work Different from Others
 ●	Our work diverges by relying entirely on reinforcement learning through DQN while leveraging COCO annotations. The primary distinction lies in your dynamic agent design, where user-specified object names determine the detection focus, rather than a purely automated pipeline.
 ●	Our project uses the COCO dataset, which is significantly larger and more diverse than datasets used in earlier RL-based detection work. This introduces challenges related to computation and generalization.
