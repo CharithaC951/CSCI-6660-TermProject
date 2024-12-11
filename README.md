@@ -20,6 +20,9 @@ ssd = ssd300_vgg16(weights=SSD300_VGG16_Weights.DEFAULT).
 
 # Code
 1. Code for SSD & Faster RCNN in Static Environment :  https://github.com/CharithaC951/CSCI-6660-TermProject/blob/main/StaticEnvironment-DL.ipynb
+2. Code for RCNN in Dynamic Environment : https://github.com/CharithaC951/CSCI-6660-TermProject/blob/main/DynamicEnvironmentDLRCNN%20(1).ipynb
+3. Code for SSD in Dynamic Environment : https://github.com/CharithaC951/CSCI-6660-TermProject/blob/main/DynamicEnvironmentDL-SSD.ipynb
+4. COde for DQN in both Static & Dynamic Environemnt : https://github.com/CharithaC951/CSCI-6660-TermProject/blob/main/DQN-DRL(Static%20%26%20Dynamic).ipynb
 
 # Results and Conclusion
 Case 1 - Single object in single image in static environment
@@ -56,6 +59,24 @@ Person
 ![image](https://github.com/user-attachments/assets/7cb18a00-ef64-4d9c-be4c-0b66fc7d5183)
 
 As of Dynamic environment, SSD and FasterRCNN are giving similar and promising results but not as good as their performance in static environment. FasterRCNN is performing better on SSD in dynamic environment. Factors such as camera quality, frame rate, lighting and frequently changing external noises in the frames plays key role in decision making.
+
+Case 4 : DQN for Static Environemnt 
+
+Person & Animal 
+
+![DQN Output Static ](https://github.com/user-attachments/assets/6de8dd30-627d-4dda-a79a-e0e4b6e32f7c)
+
+In Static Environemnt DQN is performing good with the help of pretrained SSD model. We can get better results when we use hybrid model.
+
+Case 5: DQN for Dynamic Environemnt 
+
+Bag & Chair 
+
+![DQN output Dynamic ](https://github.com/user-attachments/assets/084e6a3d-362e-4cdc-a26a-9e9d0865737c)
+
+In Dynamic Environment DQN is not giving good results. For proper detection of objects by using DQN with better accuracy & precisions can be accomplished by increasing eplison and with better reward values while in training of DQN Agent.  
+
+
 
 # How is Our Work Different from Others
 Our work diverges by relying entirely on reinforcement learning through DQN while leveraging COCO annotations. The primary distinction lies in your dynamic agent design, where user-specified object names determine the detection focus, rather than a purely automated pipeline. Our project uses the COCO dataset, which is significantly larger and more diverse than datasets used in earlier RL-based detection work. This introduces challenges related to computation and generalization. While traditional models like YOLO or Faster R-CNN are purely supervised, our approach combines reinforcement learning with deep learning to explore bounding box predictions dynamically. The use of DQN makes our work suitable for scenarios requiring iterative refinement or interaction, such as autonomous agents in complex environments.
