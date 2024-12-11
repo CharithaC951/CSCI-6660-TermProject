@@ -16,13 +16,16 @@ ssd = ssd300_vgg16(weights=SSD300_VGG16_Weights.DEFAULT).
 6. Use 'MobileNetV2' for SSD, which is a pretrained model for dynamic environment with SSD and even here please ensure that webcam is functioning properly.
 7. For DQN , we need to setup the simulation environment & build  the agent's neural network and algorithm.
 8. PyTorch model is used as the Q-network which takes state of the environment as input , Outputs Q-values for all possible actions.
-9. ![DQN network structure with targeted Q-learning outcomes in operation with states ](https://github.com/user-attachments/assets/2f214bc6-86fc-4b66-b1c1-d2d3b028562f)
+9. For DQN jupyter notebook will take 12 to 18 hours for training an agent or else we can use google colab will take 6 to 10 hours. 
+10. ![DQN network structure with targeted Q-learning outcomes in operation with states ](https://github.com/user-attachments/assets/2f214bc6-86fc-4b66-b1c1-d2d3b028562f)
 
 # Code
 1. Code for SSD & Faster RCNN in Static Environment :  https://github.com/CharithaC951/CSCI-6660-TermProject/blob/main/StaticEnvironment-DL.ipynb
 2. Code for RCNN in Dynamic Environment : https://github.com/CharithaC951/CSCI-6660-TermProject/blob/main/DynamicEnvironmentDLRCNN%20(1).ipynb
 3. Code for SSD in Dynamic Environment : https://github.com/CharithaC951/CSCI-6660-TermProject/blob/main/DynamicEnvironmentDL-SSD.ipynb
 4. COde for DQN in both Static & Dynamic Environemnt : https://github.com/CharithaC951/CSCI-6660-TermProject/blob/main/DQN-DRL(Static%20%26%20Dynamic).ipynb
+5. Outputs for RCNN : https://github.com/CharithaC951/CSCI-6660-TermProject/blob/main/RCNNOutput.docx
+6. Outputs for SSD : https://github.com/CharithaC951/CSCI-6660-TermProject/blob/main/SSDDynamicOutput.docx
 
 # Results and Conclusion
 Case 1 - Single object in single image in static environment
