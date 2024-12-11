@@ -14,7 +14,12 @@ faster_rcnn = fasterrcnn_resnet50_fpn(weights=FasterRCNN_ResNet50_FPN_Weights.DE
 ssd = ssd300_vgg16(weights=SSD300_VGG16_Weights.DEFAULT).
 5. Use 'faster_rcnn_inception_resnet_v2_atrous_coco_2018_01_28', which is a pretrained model for dynamic environment with RCNN and please ensure that webcam is functioning properly.
 6. Use 'MobileNetV2' for SSD, which is a pretrained model for dynamic environment with SSD and even here please ensure that webcam is functioning properly.
+7. For DQN , we need to setup the simulation environment & build  the agent's neural network and algorithm.
+8. PyTorch model is used as the Q-network which takes state of the environment as input , Outputs Q-values for all possible actions.
+9. ![DQN network structure with targeted Q-learning outcomes in operation with states ](https://github.com/user-attachments/assets/2f214bc6-86fc-4b66-b1c1-d2d3b028562f)
+
 # Code
+1. Code for SSD & Faster RCNN in Static Environment :  https://github.com/CharithaC951/CSCI-6660-TermProject/blob/main/StaticEnvironment-DL.ipynb
 
 # Results and Conclusion
 Case 1 - Single object in single image in static environment
