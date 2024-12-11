@@ -17,7 +17,27 @@ ssd = ssd300_vgg16(weights=SSD300_VGG16_Weights.DEFAULT).
 # Code
 
 # Results
+Case 1 - Single object in single image in static environment
 ![image](https://github.com/user-attachments/assets/61e4a3a4-b6f8-47b0-9dba-e2465990346d)
+During Static environment and in case of single object in an image, SSD 
+and FasterRCNN are working very similar and giving good performance.
+![image](https://github.com/user-attachments/assets/363812a6-4120-4993-873f-d456b54c1f33)
+
+Case 2 - Multiple objects in single image in static environment
+![image](https://github.com/user-attachments/assets/f3c992e1-a9c9-45bf-be28-00f74a891eb2)
+![image](https://github.com/user-attachments/assets/b2f38f4f-ed56-400c-a718-7842e3a32fa3)
+
+Case 3a - Dynamic environemnt using frames in Faster RCNN
+Bird
+![image](https://github.com/user-attachments/assets/86116ffd-52cd-48b1-8d5a-232131b5371d)
+Person
+![image](https://github.com/user-attachments/assets/6c47ba29-8f04-4f5c-a214-f9a2c7b10462)
+
+Case 3b - Dynamic environemnt using frames in SSD
+Bird
+![image](https://github.com/user-attachments/assets/2252690b-5578-4616-9355-d80310222d12)
+Person
+![image](https://github.com/user-attachments/assets/7cb18a00-ef64-4d9c-be4c-0b66fc7d5183)
 
 # How is Our Work Different from Others
 Our work diverges by relying entirely on reinforcement learning through DQN while leveraging COCO annotations. The primary distinction lies in your dynamic agent design, where user-specified object names determine the detection focus, rather than a purely automated pipeline. Our project uses the COCO dataset, which is significantly larger and more diverse than datasets used in earlier RL-based detection work. This introduces challenges related to computation and generalization. While traditional models like YOLO or Faster R-CNN are purely supervised, our approach combines reinforcement learning with deep learning to explore bounding box predictions dynamically. The use of DQN makes our work suitable for scenarios requiring iterative refinement or interaction, such as autonomous agents in complex environments.
