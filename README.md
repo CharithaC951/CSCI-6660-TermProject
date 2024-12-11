@@ -14,6 +14,11 @@ faster_rcnn = fasterrcnn_resnet50_fpn(weights=FasterRCNN_ResNet50_FPN_Weights.DE
 ssd = ssd300_vgg16(weights=SSD300_VGG16_Weights.DEFAULT).
 5. Use 'faster_rcnn_inception_resnet_v2_atrous_coco_2018_01_28', which is a pretrained model for dynamic environment with RCNN and please ensure that webcam is functioning properly.
 6. Use 'MobileNetV2' for SSD, which is a pretrained model for dynamic environment with SSD and even here please ensure that webcam is functioning properly.
+# Code
+
+# Results
+![image](https://github.com/user-attachments/assets/61e4a3a4-b6f8-47b0-9dba-e2465990346d)
+
 # How is Our Work Different from Others
 Our work diverges by relying entirely on reinforcement learning through DQN while leveraging COCO annotations. The primary distinction lies in your dynamic agent design, where user-specified object names determine the detection focus, rather than a purely automated pipeline. Our project uses the COCO dataset, which is significantly larger and more diverse than datasets used in earlier RL-based detection work. This introduces challenges related to computation and generalization. While traditional models like YOLO or Faster R-CNN are purely supervised, our approach combines reinforcement learning with deep learning to explore bounding box predictions dynamically. The use of DQN makes our work suitable for scenarios requiring iterative refinement or interaction, such as autonomous agents in complex environments.
 # Our Journey in phases
