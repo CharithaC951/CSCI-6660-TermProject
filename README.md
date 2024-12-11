@@ -87,6 +87,8 @@ Our work diverges by relying entirely on reinforcement learning through DQN whil
 # Phase 1
 [CSCI-6660-AIProposal.pptx](https://github.com/user-attachments/files/17878723/CSCI-6660-AIProposal.pptx)
 # Phase 2
+[phase2.pdf](https://github.com/user-attachments/files/18100465/phase2.pdf)
+
 # Phase 3
 [CSCI-6660-AI-FinalPPT.pptx](https://github.com/user-attachments/files/18099758/CSCI-6660-AI-FinalPPT.pptx)
 
