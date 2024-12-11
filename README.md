@@ -16,7 +16,7 @@ ssd = ssd300_vgg16(weights=SSD300_VGG16_Weights.DEFAULT).
 6. Use 'MobileNetV2' for SSD, which is a pretrained model for dynamic environment with SSD and even here please ensure that webcam is functioning properly.
 # Code
 
-# Results
+# Results and Conclusion
 Case 1 - Single object in single image in static environment
 ![image](https://github.com/user-attachments/assets/61e4a3a4-b6f8-47b0-9dba-e2465990346d)
 
@@ -26,6 +26,9 @@ and FasterRCNN are working very similar and giving good performance.
 Case 2 - Multiple objects in single image in static environment
 ![image](https://github.com/user-attachments/assets/f3c992e1-a9c9-45bf-be28-00f74a891eb2)
 ![image](https://github.com/user-attachments/assets/b2f38f4f-ed56-400c-a718-7842e3a32fa3)
+
+While working with multiple objects in an image where the objects are 
+tiny or overlapping, SSD is giving better results in comparison with FasterRCNN.
 
 Case 3a - Dynamic environemnt using frames in Faster RCNN
 
@@ -46,6 +49,8 @@ Bird
 Person
 
 ![image](https://github.com/user-attachments/assets/7cb18a00-ef64-4d9c-be4c-0b66fc7d5183)
+
+As of Dynamic environment, SSD and FasterRCNN are giving similar and promising results but not as good as their performance in static environment. FasterRCNN is performing better on SSD in dynamic environment. Factors such as camera quality, frame rate, lighting and frequently changing external noises in the frames plays key role in decision making.
 
 # How is Our Work Different from Others
 Our work diverges by relying entirely on reinforcement learning through DQN while leveraging COCO annotations. The primary distinction lies in your dynamic agent design, where user-specified object names determine the detection focus, rather than a purely automated pipeline. Our project uses the COCO dataset, which is significantly larger and more diverse than datasets used in earlier RL-based detection work. This introduces challenges related to computation and generalization. While traditional models like YOLO or Faster R-CNN are purely supervised, our approach combines reinforcement learning with deep learning to explore bounding box predictions dynamically. The use of DQN makes our work suitable for scenarios requiring iterative refinement or interaction, such as autonomous agents in complex environments.
